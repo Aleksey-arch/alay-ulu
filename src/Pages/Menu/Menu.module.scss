@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 8px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 2px 8px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 2px 8px 5px rgba(34, 60, 80, 0.2);
+  color: #e8e8e8;
+  background-color: transparent;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.btn {
+  width: 100%;
+  margin: 10px auto;
+  height: 40px;
+  font-size: 16px;
+  background-color: #19919f;
+  border-radius: 7px;
+  &:hover {
+    background-color: #1eb2c4;
+  }
+}
+.label {
+  color: #595959;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.input {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    box-shadow: 0 0 0 0.1rem #44bbc9;
+  }
+}
+
+.input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+}
+
+.input {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  border-radius: 5px;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+
+}
+
+.toRegister {
+  margin: 7px;
+  text-align: center;
+  font-size: 12px;
+  a {
+    color: #1eb2c4;
+    margin-left: 5px;
+    &:hover {
+      color: #31c2d3;
+    }
+  }
+}
+
+
+
