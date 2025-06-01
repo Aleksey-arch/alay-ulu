@@ -2,13 +2,6 @@ import styless from './SignUp.module.scss'
 import { Link } from 'react-router'
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form'
 
-// interface IData {
-//   login: string
-//   email: string
-//   password: string
-//   dublePassword: string
-// }
-
 function SignUp() {
   const {
     register,
@@ -16,14 +9,7 @@ function SignUp() {
     watch,
     formState: { errors },
   } = useForm()
-  const onSubmit: SubmitHandler<FieldValues> = ({
-    login,
-    email,
-    password,
-    dublePassword,
-  }) => {
-    console.log(login, email, password, dublePassword)
-  }
+  const onSubmit: SubmitHandler<FieldValues> = ({ login, email, password, dublePassword }) => {}
   return (
     <div className={styless.container}>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -106,7 +92,7 @@ function SignUp() {
       </form>
       <div className={styless.toRegister}>
         Уже есть профиль?
-        <Link to="/login">Вход</Link>
+        <Link to="/sign-in">Вход</Link>
       </div>
     </div>
   )

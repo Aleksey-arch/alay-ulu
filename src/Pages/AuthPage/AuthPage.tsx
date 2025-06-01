@@ -1,7 +1,7 @@
-import styless from './Layout.module.scss'
+import styless from './AuthPage.module.scss'
 import { Outlet } from 'react-router'
 
-function Layout() {
+function AuthPage() {
   return (
     <>
       <div className={styless.container}>
@@ -11,4 +11,4 @@ function Layout() {
   )
 }
 
-export { Layout }
+export { AuthPage }

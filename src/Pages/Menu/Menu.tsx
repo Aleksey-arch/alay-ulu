@@ -34,7 +34,8 @@ function Menu() {
           Войти
         </button>
       </form>
-      <div className={styless.toRegister}>Нет профиля?
+      <div className={styless.toRegister}>
+        Нет профиля?
         <Link to="/register">Регистрация</Link>
       </div>
     </div>

@@ -50,7 +50,9 @@ form {
   background-clip: padding-box;
   border: 1px solid #bdbdbd;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
   &:focus {
     box-shadow: 0 0 0 0.1rem #44bbc9;
   }
@@ -68,7 +70,6 @@ form {
   border-radius: 5px;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-
 }
 
 .toRegister {
@@ -83,6 +84,3 @@ form {
     }
   }
 }
-
-
-
